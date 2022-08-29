@@ -77,7 +77,7 @@ double BehaviorPlannerFSM::get_look_ahead_distance(const State& ego_state) {
   // TODO-Lookahead: One way to find a reasonable lookahead distance is to find
   // the distance you will need to come to a stop while traveling at speed V and
   // using a comfortable deceleration.
-  auto look_ahead_distance = (-1.0 * pow(velocity_mag,2.0))/(2*3);  // <- Fix This
+  auto look_ahead_distance = (1.0 * pow(velocity_mag,2.0))/(2*3);  // <- Fix This
 
   // LOG(INFO) << "Calculated look_ahead_distance: " << look_ahead_distance;
 
